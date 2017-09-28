@@ -10,25 +10,22 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- For including html pages -->
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-        <!-- My custom javascript and css includes -->
-        <script src="Controllers/NavbarController.js"></script>
         <script src="Controllers/WindowController.js"></script>
-        <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
-    <div w3-include-html="Templates/navbar.html"></div>
-
-    <script>
-        $(window).on('load', function() {
-            w3.includeHTML();
-        });
-    </script>
-
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="" class="navbar-brand">Welcome</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="" onclick="changeUrl('')">Home</a></li>
+                <li><a onclick="changeUrl('Templates/education.html')">Education</a></li>
+                <li><a href="" onclick="changeUrl('skills')">Skills</a></li>
+                <li><a href=""onclick="changeUrl('projects')">Projects</a></li>
+                <li><a href=""onclick="changeUrl('Templates/workExperience.html')">Work Experience</a></li>
     </body>
-
 </html>
