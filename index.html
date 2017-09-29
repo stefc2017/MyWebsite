@@ -13,7 +13,9 @@
         <!-- For including html pages -->
         <script src="https://www.w3schools.com/lib/w3.js"></script>
 
+
         <!-- My custom javascript and css includes -->
+        <script src="Controllers/NavbarController.js"></script>
         <script src="Controllers/WindowController.js"></script>
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -22,10 +24,10 @@
     <div w3-include-html="Templates/navbar.html"></div>
 
     <script>
-        $(function(){
-            w3.includeHTML();
-            alert("here");
-        })
+        $(window).on('load', function() {
+            w3.includeHTML(updateTabs("index.html", "homeTab", "SkillsTab"));
+
+        });
     </script>
 
     </body>
