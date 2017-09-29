@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Stefan's technical skills</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,18 +14,18 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
     <!-- My custom javascript and css includes -->
-    <script src="Controllers/WindowController.js"></script>
+    <script src="../Controllers/NavbarController.js"></script>
+    <script src="../Controllers/WindowController.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-<div w3-include-html="./navbar.html"></div>
+<div w3-include-html="navbar.html"></div>
 
 <script>
-    $(function(){
+    $(window).on('load', function() {
         w3.includeHTML();
-        alert("here2");
-    })
+    });
 </script>
 
 </body>
