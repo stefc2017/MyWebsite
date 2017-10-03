@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- For including html pages -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <!-- My custom javascript and css includes -->
+    <script src="Controllers/WindowController.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a id="WelcomeTab" href="" class="navbar-brand">Welcome</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li id="homeTab" class="active"><a href="" onclick="changeUrl('index.html')">Home</a></li>
+            <li id= "EducationTab" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Education
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li id="highSchoolTab"><a onclick="changeUrl('Templates/highschool.html')">High School</a></li>
+                    <li id="postSecondaryTab"><a onclick="changeUrl('Templates/postsecondary.html')">Post-Secondary</a></li>
+                </ul>
+            </li>
+            <li id= "skillsTab" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li id="softSkillsTab"><a onclick="changeUrl('Templates/softSkills.html')">Soft Skills</a></li>
+                    <li id="technicalSkillsTab"><a onclick="changeUrl('Templates/technicalSkills.html')">Technical Skills</a></li>
+                </ul>
+            </li>
+            <li><a href="" onclick="changeUrl('Templates/projects.html')">Projects</a></li>
+            <li><a href=""onclick="changeUrl('Templates/workExperience.html')">Work Experience</a></li>
+            </body>
+        </ul>
+    </div>
+</nav>
