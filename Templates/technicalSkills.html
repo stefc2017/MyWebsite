@@ -16,11 +16,121 @@
     <!-- My custom javascript and css includes -->
     <script src="../Controllers/NavbarController.js"></script>
     <script src="../Controllers/WindowController.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
+
 <div w3-include-html="navbar.html"></div>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 id="technicalSkillsTitle"> Stéfan's Technical Skills</h1>
+    </div>
+
+    <div class="panel-group" id="accordion">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#programmingLanguages">
+                        Programming Languages</a>
+                </h4>
+            </div>
+            <div id="programmingLanguages" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="progress-label">Java</span>
+                            <div class="progress">
+                                <div id="java" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                     aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                                </div>
+                            </div>
+
+                            <span class="progress-label">Android</span>
+                            <div class="progress">
+                                <div id="Android" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                     aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                </div>
+                            </div>
+
+                            <span class="progress-label">C++</span>
+                            <div class="progress">
+                                <div id="C++" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                     aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 text-right">
+                            <span class="progress-label">JavaScript</span>
+                            <div class="progress">
+                                <div id="javaScript" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                </div>
+                            </div>
+
+                            <span class="progress-label">C</span>
+                            <div class="progress">
+                                <div id="C" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                     aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                </div>
+                            </div>
+
+                            <span class="progress-label">Grails</span>
+                            <div class="progress">
+                                <div id="grails" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                     aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#techAndFrameworks">
+                        Technologies and Frameworks</a>
+                </h4>
+            </div>
+            <div id="techAndFrameworks" class="panel-collapse collapse">
+                <div class="panel-body">Technologies and Frameworks</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#Operating Systems">
+                        Operating Systems</a>
+                </h4>
+            </div>
+            <div id="Operating Systems" class="panel-collapse collapse">
+                <div class="panel-body">Operating Systems</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#Software">
+                        Software</a>
+                </h4>
+            </div>
+            <div id="Software" class="panel-collapse collapse">
+                <div class="panel-body">Software</div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <script>
     $(window).on('load', function() {

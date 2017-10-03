@@ -1,6 +1,21 @@
-//Modify this function. You want to make one tab active and the other not
-function updateTabs(file, unselected, selected){
-    $.get("../Templates/navbar.html", null, function(){
-        $("#skillsTab").addClass("active");
-    });
-}
+// var activeTab = '#homeTab';
+//
+// function setActiveTab(){
+//  var currentUrl = window.location.href;
+//
+//  if(currentUrl.indexOf("highschool.html")){
+//      activeTab = "#highSchoolTab";
+//  }
+//  else if(currentUrl.indexOf("#postsecondary.html")){
+//  }
+// }
+//
+// function removeActiveTab(){
+//     $(activeTab).removeClass("active");
+// }
+
+// function updateTabs(){
+//     removeActiveTab();
+//     setActiveTab();
+// }
+
