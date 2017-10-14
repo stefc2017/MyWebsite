@@ -33,7 +33,7 @@ label {
     }
 }
 
-#technicalSkillsTitle{
+#technicalSkillsTitle, #softSkillsTitle{
     text-align: center;
     -webkit-animation:colorchange 12s infinite alternate;
     font-weight: bold;
