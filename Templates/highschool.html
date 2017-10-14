@@ -13,16 +13,22 @@
     <!-- For including html pages -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
+    <!-- Granim.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/1.0.6/granim.min.js"></script>
+
     <!-- My custom javascript and css includes -->
-    <script src="../Controllers/WindowController.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <script src="../js/WindowController.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+<!-- Create a <canvas> element -->
+<canvas id="canvas-radial"></canvas>
 <div w3-include-html="navbar.html"></div>
 
 <script>
     $(function(){
+        animateBackground();
         w3.includeHTML();
     })
 </script>

@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Stefan's post-secondary education</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stefan's post-secondary education</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- For including html pages -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- For including html pages -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-    <!-- My custom javascript and css includes -->
-    <script src="../Controllers/WindowController.js"></script>
-    <link rel="stylesheet" href="css/index.css">
-</head>
+        <!-- Granim.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/1.0.6/granim.min.js"></script>
 
-<body>
-<div w3-include-html="navbar.html"></div>
+        <!-- My custom javascript and css includes -->
+        <script src="../js/WindowController.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
-<script>
-    $(function(){
-        w3.includeHTML();
-    })
-</script>
+    <body>
+        <!-- Create a <canvas> element -->
+        <canvas id="canvas-radial"></canvas>
+        <div w3-include-html="navbar.html"></div>
 
-</body>
+        <script>
+            $(function(){
+                animateBackground();
+                w3.includeHTML();
+            })
+        </script>
+    </body>
 </html>
