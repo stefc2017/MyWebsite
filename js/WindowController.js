@@ -3,10 +3,10 @@ const defaultUrl = "file:///C:/Users/Stefan/Desktop/Programming/web/MyWebsite/";
 //use for github pages
 //const defaultUrl = "https://stefc2017.github.io/MyWebsite/";
 
-var elementHeaderHeight = -1;
+var initialHeight;
 
-    function setElementHeaderHeight(height){
-        elementHeaderHeight = height;
+    function setClientWindowHeight(backgroundHeight){
+        initialHeight = ($(backgroundHeight).height());
     }
 
     function changeUrl(page){
@@ -26,27 +26,22 @@ var elementHeaderHeight = -1;
                         ['#ffb347', '#ffcc33'],
                         ['#83a4d4', '#b6fbff'],
                         ['#9D50BB', '#6E48AA']
-                    ]
+                    ],
+                    transitionSpeed: 2500
                 }
             }
         });
     }
 
 
-    function updateBackgroundHeight(backgroundElement, elementHeader, elementBody){
-        var backgroundHeight = $(backgroundElement).height();
+    function updateBackgroundHeight(backgroundElement){
+        setTimeout(function(){
+            if(document.body.clientHeight < initialHeight){
+                $(backgroundElement).height(initialHeight);
+            }
+            else{
+                $(backgroundElement).height(document.body.clientHeight);
+            }
+        }, 350);
 
-        if(elementHeaderHeight == -1){
-            setElementHeaderHeight($(elementHeader).height());
-        }
-
-        if($(elementBody).attr('aria-expanded') === "false"){
-            $(backgroundElement).height(backgroundHeight + elementHeaderHeight);
-        }
-        else if($(elementBody).attr('aria-expanded') === "true"){
-            $(backgroundElement).height(backgroundHeight - elementHeaderHeight);
-        }
-        else{
-            $(backgroundElement).height(backgroundHeight + elementHeaderHeight);
-        }
     }

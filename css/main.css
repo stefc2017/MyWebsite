@@ -16,10 +16,6 @@ label {
     color: black;
 }
 
-a {
-    cursor: pointer;
-  }
-
 #canvas-radial {
     position: absolute;
     display: block;

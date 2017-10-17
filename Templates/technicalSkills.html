@@ -36,9 +36,9 @@
 
             <div class="panel panel-default">
                 <!-- Programming languages -->
-                <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial', '#programmingLanguages', '#programmingLanguagesBody')">
+                <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
                     <h4 class="panel-title">
-                        <a id="programmingLanguagesBody" data-toggle="collapse" data-parent="#accordion" href="#programmingLanguages">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#programmingLanguages">
                             Programming Languages</a>
                     </h4>
                 </div>
@@ -127,7 +127,7 @@
             </div>
 
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#techAndFrameworks">
                             Technologies and Frameworks</a>
@@ -253,7 +253,7 @@
             </div>
 
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#Operating_Systems">
                             Operating Systems</a>
@@ -322,7 +322,7 @@
             </div>
 
             <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#Software">
                             Software</a>
@@ -402,6 +402,7 @@
         $(window).on('load', function() {
             animateBackground();
             w3.includeHTML();
+            setClientWindowHeight("#canvas-radial");
         });
     </script>
 

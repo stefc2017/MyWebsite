@@ -36,7 +36,7 @@
 
             <div class="panel panel-default">
                 <!-- Programming languages -->
-                <div class="panel-heading">
+                <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#softSkills">
                             Soft skills
@@ -146,6 +146,7 @@
             $(window).on('load', function() {
                 animateBackground();
                 w3.includeHTML();
+                setClientWindowHeight("#canvas-radial");
             });
         </script>
 
