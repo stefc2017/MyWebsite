@@ -13,34 +13,36 @@
 
     <!-- My custom javascript and css includes -->
     <script src="Controllers/WindowController.js"></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a id="WelcomeTab" href="" class="navbar-brand">Welcome</a>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="WelcomeTab" href="" class="navbar-brand">Welcome</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li id="homeTab" class="active"><a href="" onclick="changeUrl('index.html')">Home</a></li>
+                <li id= "EducationTab" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Education
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="highSchoolTab"><a onclick="changeUrl('Templates/highschool.html')">High School</a></li>
+                        <li id="postSecondaryTab"><a onclick="changeUrl('Templates/postsecondary.html')">Post-Secondary</a></li>
+                    </ul>
+                </li>
+                <li id= "skillsTab" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="softSkillsTab"><a onclick="changeUrl('Templates/softSkills.html')">Soft Skills</a></li>
+                        <li id="technicalSkillsTab"><a onclick="changeUrl('Templates/technicalSkills.html')">Technical Skills</a></li>
+                    </ul>
+                </li>
+                <li><a href="" onclick="changeUrl('Templates/projects.html')">Projects</a></li>
+                <li><a href=""onclick="changeUrl('Templates/workExperience.html')">Work Experience</a></li>
+            </ul>
         </div>
-        <ul class="nav navbar-nav">
-            <li id="homeTab" class="active"><a href="" onclick="changeUrl('index.html')">Home</a></li>
-            <li id= "EducationTab" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Education
-                    <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li id="highSchoolTab"><a onclick="changeUrl('Templates/highschool.html')">High School</a></li>
-                    <li id="postSecondaryTab"><a onclick="changeUrl('Templates/postsecondary.html')">Post-Secondary</a></li>
-                </ul>
-            </li>
-            <li id= "skillsTab" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills
-                    <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li id="softSkillsTab"><a onclick="changeUrl('Templates/softSkills.html')">Soft Skills</a></li>
-                    <li id="technicalSkillsTab"><a onclick="changeUrl('Templates/technicalSkills.html')">Technical Skills</a></li>
-                </ul>
-            </li>
-            <li><a href="" onclick="changeUrl('Templates/projects.html')">Projects</a></li>
-            <li><a href=""onclick="changeUrl('Templates/workExperience.html')">Work Experience</a></li>
-            </body>
-        </ul>
-    </div>
-</nav>
+    </nav>
+</body>
