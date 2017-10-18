@@ -5,7 +5,6 @@ var initialHeight;
     }
 
     function changeUrl(page){
-        alert(getUrl());
         window.location.href = getUrl() + page;
     }
 
