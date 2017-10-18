@@ -4,10 +4,6 @@ var initialHeight;
         initialHeight = ($(backgroundHeight).height());
     }
 
-    function changeUrl(page){
-        window.location.href = getUrl() + page;
-    }
-
     function animateBackground(){
         var granimInstance = new Granim({
             element: '#canvas-radial',
