@@ -1,64 +1,74 @@
 
-var environment;
-var currentUrl;
+var environmentProperties;
+
+function EnvironmentProperties(){
+    this.environment = " ";
+    this.currentUrl = " ";
+
+    this.getEnvironment = function() {
+        return this.environment;
+    };
+
+    this.setEnvironment = function(env){
+        this.environment = env;
+    };
+
+    this.setUrl = function(){
+        if(this.environment === "dev"){
+            this.currentUrl = "https://stefc2017.github.io/MyWebsite/";
+        }
+        else if(this.environment === "localhost"){
+            this.currentUrl = "file:///C:/Users/Stefan/Desktop/Programming/web/MyWebsite/";
+        }
+    };
+
+    this.getUrl = function (){
+        var url;
+
+        if(this.environment === "dev"){
+            url = "https://stefc2017.github.io/MyWebsite/";
+        }
+        else if(this.environment === "localhost"){
+            url = "file:///C:/Users/Stefan/Desktop/Programming/web/MyWebsite/";
+        }
+        return url;
+    }
+}
 
 function initialize(){
+    environmentProperties = new EnvironmentProperties();
     setClientWindowHeight("#canvas-radial");
     setAppEnvironment();
-    setUrl();
-}
-
-function setUrl(){
-    if(getEnvironment() === "dev"){
-        currentUrl = "https://stefc2017.github.io/MyWebsite/";
-        alert("dev");
-    }
-    else if(getEnvironment() === "localhost"){
-        currentUrl = "file:///C:/Users/Stefan/Desktop/Programming/web/MyWebsite/";
-        alert("localhost");
-    }
-}
-
-function getUrl(){
-    var url;
-
-    if(getEnvironment() === "dev"){
-        url = "https://stefc2017.github.io/MyWebsite/";
-        alert("dev");
-    }
-    else if(getEnvironment() === "localhost"){
-        url= "file:///C:/Users/Stefan/Desktop/Programming/web/MyWebsite/";
-        alert("localhost");
-    }
-    return url;
-}
-
-function setEnvironment(env){
-    alert(env + " hola");
-    environment = env;
+    //setUrl();
 }
 
 function getEnvironment(){
-    alert(environment + " uno dos");
-    return environment;
+    return environmentProperties.getEnvironment();
+}
+
+function setEnvironment(env){
+    environmentProperties.setEnvironment(env);
+}
+
+function setUrl(){
+    environmentProperties.setUrl();
+}
+
+function getUrl(){
+    return environmentProperties.getUrl();
 }
 
 function setAppEnvironment(){
     //on github
     if(location.hostname === "stefc2017.github.io"){
-        alert("dev" + " 29");
         setEnvironment("dev");
     }
     else{ //localhost
         setEnvironment("localhost");
-        alert("local");
     }
 }
 
 function changeUrl(page){
-    alert(window.location.href + " pug");
-    alert(getUrl() + " get url");
-    alert(page + " page");
     window.location.href = getUrl() + page;
     alert(window.location.href + " pug2");
 }
