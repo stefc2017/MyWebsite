@@ -39,7 +39,7 @@ function initialize(){
     environmentProperties = new EnvironmentProperties();
     setClientWindowHeight("#canvas-radial");
     setAppEnvironment();
-    //setUrl();
+    setUrl();
 }
 
 function getEnvironment(){
@@ -70,5 +70,4 @@ function setAppEnvironment(){
 
 function changeUrl(page){
     window.location.href = getUrl() + page;
-    alert(window.location.href + " pug2");
 }
