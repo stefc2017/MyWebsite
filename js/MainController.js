@@ -69,5 +69,5 @@ function setAppEnvironment(){
 }
 
 function changeUrl(page){
-    window.location.href = getUrl() + page;
+    window.top.location.href = getUrl() + page;
 }
