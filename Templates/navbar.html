@@ -10,41 +10,48 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- For including html pages -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- SmartMenus core CSS (required) -->
+    <link href="../css/sm-core-css.css" rel="stylesheet" type="text/css" />
+    <!-- "sm-clean" menu theme (optional, you can use your own CSS, too) -->
+    <link href="../css/sm-clean.css" rel="stylesheet" type="text/css" />
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="../js/jquery.smartmenus.js"></script>
 
     <!-- My custom javascript and css includes -->
     <script src="../js/WindowController.js"></script>
     <script src="../js/MainController.js"></script>
     <script src="../js/NavbarController.js"></script>
-    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a id="WelcomeTab" href="" class="navbar-brand">Welcome</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li id="homeTab" class="active"><a href="" onclick="changeUrl('index.html')">Home</a></li>
-                <li id= "EducationTab" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Education
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li id="highSchoolTab"><a onclick="changeUrl('Templates/highschool.html')">High School</a></li>
-                        <li id="postSecondaryTab"><a onclick="changeUrl('Templates/postsecondary.html')">Post-Secondary</a></li>
-                    </ul>
-                </li>
-                <li id= "skillsTab" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Skills
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li id="softSkillsTab"><a onclick="changeUrl('Templates/softSkills.html')">Soft Skills</a></li>
-                        <li id="technicalSkillsTab"><a onclick="changeUrl('Templates/technicalSkills.html')">Technical Skills</a></li>
-                    </ul>
-                </li>
-                <li><a href="" onclick="changeUrl('Templates/projects.html')">Projects</a></li>
-                <li><a href=""onclick="changeUrl('Templates/workExperience.html')">Work Experience</a></li>
+<body style="background: none !important">
+<nav class="main-nav" role="navigation">
+    </br>
+    <!-- Sample menu definition -->
+    <ul id="main-menu" class="sm sm-clean">
+        <li id="homeTab" class="active"><a href="" onclick="changeUrl('index.html')">Home</a></li>
+        <li id="educationTab"><a href="">Education</a>
+            <ul>
+                <li id="highSchoolTab"><a onclick="changeUrl('Templates/highschool.html')">High School</a></li>
+                <li id="postSecondaryTab"><a onclick="changeUrl('Templates/postsecondary.html')">Post-Secondary</a></li>
             </ul>
-        </div>
-    </nav>
+        </li>
+        <li id="skillsTab" class="active"><a href="#">Skills</a>
+            <ul>
+                <li id="softSkillsTab" style="cursor: pointer"><a onclick="changeUrl('Templates/softSkills.html')">Soft Skills</a></li>
+                <li id="technicalSkillsTab"><a li="potato" onclick="changeUrl('Templates/technicalSkills.html')">Technical Skills</a></li>
+            </ul>
+        </li>
+        <li><a href="" onclick="changeUrl('Templates/projects.html')">Projects</a></li>
+        <li><a href=""onclick="changeUrl('Templates/workExperience.html')">Work Experience</a></li>
+    </ul>
+</nav>
+
+<script>
+    $(window).on('load', function() {
+        initialize();
+        initializeSmartMenu();
+    });
+</script>
 </body>
