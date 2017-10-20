@@ -28,7 +28,7 @@ label {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    padding-left: 10px;
+    padding-left: 12px;
 }
 
 @media (min-width: 768px) {
@@ -68,7 +68,7 @@ label {
 
 #main-menu {
     clear: both;
-    width: 1252px;
+    width: 1251px;
 }
 
 @media (min-width: 768px) {
