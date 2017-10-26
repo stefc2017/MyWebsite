@@ -181,7 +181,7 @@ label {
 /* jquery smart menus css end */
 
 #NotIframe{
-    margin-top: -150px;
+    margin-top: -260px;
 }
 
 #softSkillsTab, #highSchoolTab, #postSecondaryTab, #technicalSkillsTab{
@@ -189,9 +189,14 @@ label {
 }
 
 #iframe_footer{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
     padding-top: 56px;
+}
+
+body{
+    overflow-x: hidden;
+    margin-bottom: 90px;
 }
