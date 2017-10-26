@@ -180,16 +180,23 @@ label {
 
 /* jquery smart menus css end */
 
-iframe{
-    width:1263px;
-    height:150px;
-    border:none;
-}
-
 #NotIframe{
-    margin-top: -65px;
+    margin-top: -260px;
 }
 
 #softSkillsTab, #highSchoolTab, #postSecondaryTab, #technicalSkillsTab{
     cursor: pointer;
+}
+
+#iframe_footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 56px;
+}
+
+body{
+    overflow-x: hidden;
+    margin-bottom: 90px;
 }

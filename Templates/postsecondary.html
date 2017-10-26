@@ -22,18 +22,17 @@
         <script type="text/javascript" src="../js/jquery.smartmenus.js"></script>
 
         <!-- My custom javascript and css includes -->
+        <script src="../js/NavbarController.js"></script>
         <script src="../js/WindowController.js"></script>
         <script src="../js/MainController.js"></script>
-        <script src="../js/NavbarController.js"></script>
-        <link rel="stylesheet" href="css/main.css">
+        <script src="../js/FooterController.js"></script>
+        <link rel="stylesheet" href="../css/main.css">
     </head>
 
     <body>
         <!-- Create a <canvas> element -->
         <canvas id="canvas-radial"></canvas>
-        <div>
-            <iframe src="navbar.html"></iframe>
-        </div>
+        <iframe id="iframe_navbar" src="navbar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
 
         <script>
             $(function(){
@@ -42,5 +41,7 @@
                 initializeSmartMenu();
             })
         </script>
+
+        <iframe id="iframe_footer" src="footer.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
     </body>
 </html>

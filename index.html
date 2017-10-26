@@ -26,25 +26,24 @@
         <script src="js/NavbarController.js"></script>
         <script src="js/WindowController.js"></script>
         <script src="js/MainController.js"></script>
+        <script src="js/FooterController.js"></script>
         <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
 
-    <!-- Create a <canvas> element -->
-    <canvas id="canvas-radial"></canvas>
-    <div>
-        <iframe src="Templates/navbar.html"></iframe>
-    </div>
+        <!-- Create a <canvas> element -->
+        <canvas id="canvas-radial"></canvas>
+        <iframe id="iframe_navbar" src="Templates/navbar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
 
+        <script>
+            $(window).on('load', function() {
+                initialize();
+                animateBackground();
+                initializeSmartMenu();
+            });
+        </script>
 
-    <script>
-        $(window).on('load', function() {
-            initialize();
-            animateBackground();
-            initializeSmartMenu();
-        });
-    </script>
-
+        <iframe id="iframe_footer" src="Templates/footer.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
     </body>
 </html>
