@@ -1,6 +1,14 @@
 
 var environmentProperties;
 
+/* Initialize *******************************************/
+function initialize(){
+    environmentProperties = new EnvironmentProperties();
+    setClientWindowHeight("#canvas-radial");
+    setAppEnvironment();
+    setUrl();
+}
+
 function EnvironmentProperties(){
     this.environment = " ";
     this.currentUrl = " ";
@@ -35,13 +43,6 @@ function EnvironmentProperties(){
     }
 }
 
-function initialize(){
-    environmentProperties = new EnvironmentProperties();
-    setClientWindowHeight("#canvas-radial");
-    setAppEnvironment();
-    setUrl();
-}
-
 function getEnvironment(){
     return environmentProperties.getEnvironment();
 }
@@ -66,8 +67,4 @@ function setAppEnvironment(){
     else{ //localhost
         setEnvironment("localhost");
     }
-}
-
-function changeUrl(page){
-    window.top.location.href = getUrl() + page;
 }

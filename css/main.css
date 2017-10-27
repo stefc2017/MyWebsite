@@ -29,6 +29,7 @@ label {
     -o-border-radius: 5px;
     border-radius: 5px;
     padding-left: 12px;
+    padding-right: 12px;
 }
 
 @media (min-width: 768px) {
@@ -68,7 +69,6 @@ label {
 
 #main-menu {
     clear: both;
-    width: 1251px;
 }
 
 @media (min-width: 768px) {
