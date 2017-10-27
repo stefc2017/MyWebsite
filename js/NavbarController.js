@@ -35,7 +35,7 @@ function initializeSmartMenu(){
     });
 }
 
-function resizeNavbarWidth(obj, resize){
-    var iFrameDOM = $("#iframe_navbar").contents();
-    iFrameDOM.find("#main-menu").width((window.screen.width - 24) + 'px');
-}
+    function resizeNavbarWidth(){
+        var iFrameDOM = $("#iframe_navbar").contents();
+        iFrameDOM.find("#main-menu").width((window.screen.width - 24) + 'px');
+    }
