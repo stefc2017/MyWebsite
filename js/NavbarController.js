@@ -39,5 +39,5 @@ function initializeSmartMenu(){
         var newWidth = window.screen.width - 44;      //browsers add 20px to whatever you have calculated
                                                       // (for some odd reason) 24(padding) + 20 for browser
         var iFrame = $("#"+obj.id);
-        alert(iFrame.contents().find("#main-menu").width(newWidth +'px'));
+        iFrame.contents().find("#main-menu").width(newWidth +'px');
     }
