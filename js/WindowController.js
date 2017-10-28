@@ -24,7 +24,6 @@ function animateBackground(){
     });
 }
 
-
 function updateBackgroundHeight(backgroundElement){
     setTimeout(function(){
         if(document.body.clientHeight < initialHeight){
@@ -50,7 +49,7 @@ function updateBackgroundHeight(backgroundElement){
         obj.style.width = window.screen.width + 'px';
 
         if(obj.id === "iframe_navbar"){
-            resizeNavbarWidth();
+            resizeNavbarWidth(obj);
         }
     }
 
