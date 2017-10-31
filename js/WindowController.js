@@ -46,7 +46,7 @@ function updateBackgroundHeight(backgroundElement){
     }
 
     function resizeWidth(obj) {
-        obj.style.width = window.screen.width + 'px';
+        obj.style.width = window.innerWidth + 'px';
 
         if(obj.id === "iframe_navbar"){
             resizeNavbarWidth(obj);
