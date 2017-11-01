@@ -44,7 +44,7 @@ function initializeSmartMenu(){
         else{
             newWidth = window.innerWidth - 44;
         }
-        
+
         var iFrame = $("#"+obj.id);
         iFrame.contents().find("#main-menu").width(newWidth +'px');
     }
