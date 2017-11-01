@@ -3,6 +3,7 @@ var environmentProperties;
 
 /* Initialize *******************************************/
 function initialize(){
+    BrowserDetection();
     environmentProperties = new EnvironmentProperties();
     setClientWindowHeight("#canvas-radial");
     setAppEnvironment();
@@ -67,4 +68,17 @@ function setAppEnvironment(){
     else{ //localhost
         setEnvironment("localhost");
     }
+}
+
+function getBrowser() {
+    var browser;
+
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        browser = "firefox";
+    }
+    else{
+        browser = "other";
+    }
+
+    return browser;
 }

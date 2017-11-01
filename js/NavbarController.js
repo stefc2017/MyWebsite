@@ -36,8 +36,15 @@ function initializeSmartMenu(){
 }
 
     function resizeNavbarWidth(obj){
-        var newWidth = window.innerWidth - 24;      //browsers add 20px to whatever you have calculated
-                                                    // (for some odd reason) 24(padding) + 20 for browser
+        var newWidth;
+
+        if(getBrowser() === "firefox"){
+            newWidth = window.innerWidth - 24;
+        }
+        else{
+            newWidth = window.innerWidth - 44;
+        }
+        
         var iFrame = $("#"+obj.id);
         iFrame.contents().find("#main-menu").width(newWidth +'px');
     }
