@@ -1,9 +1,8 @@
 
 var environmentProperties;
 
-/* Initialize *******************************************/
+/******************************************* Initialize *******************************************/
 function initialize(){
-    BrowserDetection();
     environmentProperties = new EnvironmentProperties();
     setClientWindowHeight("#canvas-radial");
     setAppEnvironment();
