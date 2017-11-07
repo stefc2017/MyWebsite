@@ -200,3 +200,18 @@ body{
     overflow-x: hidden;
     margin-bottom: 90px;
 }
+
+#home_jumbotron_container{
+    position: absolute;
+    left:53px;
+    top:140px;
+}
+
+#welcome{
+    text-align: center;
+    font-weight: bold;
+}
+
+#welcomeParagraph{
+    text-align: center;
+}
