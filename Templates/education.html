@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Stefan's post-secondary education</title>
+        <title>Stefan's education</title>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,13 +26,58 @@
         <script src="../js/WindowController.js"></script>
         <script src="../js/MainController.js"></script>
         <script src="../js/FooterController.js"></script>
+        <script src="../js/TimelineController.js"></script>
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/timeline.css">
     </head>
 
-    <body>
+    <body id="education_body">
         <!-- Create a <canvas> element -->
         <canvas id="canvas-radial"></canvas>
         <iframe id="iframe_navbar" src="navbar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+
+
+
+        <section class="intro">
+            <div class="container">
+                <h1>My education &darr;</h1>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <ul>
+                <li>
+                    <div>
+                        <time>June 2014</time> Graduated with a High School Diploma from Centre scolaire Léo-Rémillard.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>September 2014</time> Began studying computer science at University of Manitoba.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>September 2016</time> Joined the computer science Co-op Program at the University of Manitoba.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>January 2017</time> Began working at Agriculture and Agri-Food Canada as a Programmer/Analyst for Work Term 1.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>May 2017</time> Finished Work Term 1 and went back to classes.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>August 2017</time> Began working at Investors Group as a Associate Software Developer for Work Term 2.
+                    </div>
+                </li>
+            </ul>
+        </section>
 
         <script>
             $(function(){
