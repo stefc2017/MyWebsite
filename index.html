@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Welcome</title>
+<head>
+    <meta charset="UTF-8" />
+    <title>Stefan's website</title>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- For including html pages -->
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <!-- Granim.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/1.0.6/granim.min.js"></script>
-        <!-- SmartMenus core CSS (required) -->
-        <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
-        <!-- "sm-clean" menu theme (optional, you can use your own CSS, too) -->
-        <link href="css/sm-clean.css" rel="stylesheet" type="text/css" />
-        <!-- SmartMenus jQuery plugin -->
-        <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+    <!-- My custom javascript and css includes -->
+    <script src="js/NavbarController.js"></script>
+    <script src="js/WindowController.js"></script>
+    <script src="js/MainController.js"></script>
+    <script src="js/TimelineController.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+</head>
 
-        <!-- My custom javascript and css includes -->
-        <script src="js/NavbarController.js"></script>
-        <script src="js/WindowController.js"></script>
-        <script src="js/MainController.js"></script>
-        <script src="js/FooterController.js"></script>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
+<body>
 
-    <body>
+<div id="navbarTab"></div>
 
-        <!-- Create a <canvas> element -->
-        <canvas id="canvas-radial"></canvas>
-        <iframe id="iframe_navbar" src="Templates/navbar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+<div id="page_container" class="container">
 
-        <div id="home_jumbotron_container" class="container">
-            <div class="jumbotron">
-                <h1 id="welcome">Welcome!</h1>
-                <p id="welcomeParagraph">This website was coded by myself from scratch and is an electronic version of my paper resume. Thank you for taking
+    <div class="container-fluid">
+        <div id="homeHeader" class="jumbotron">
+            <h1 id="welcome">Welcome!</h1>
+            <p id="welcomeParagraph">This website was coded by myself from scratch and is an electronic version of my paper resume. Thank you for taking
                 the time to visit my website. Enjoy!</p>
-            </div>
         </div>
+    </div>
 
-        <script>
-            $(window).on('load', function() {
-                initialize();
-                animateBackground();
-                initializeSmartMenu();
-            });
-        </script>
+    <div id="educationTab" class="container-fluid"></div>
+    <div id="technicalSkillsTab" class="container-fluid"></div>
+    <div id="softSkillsTab" class="container-fluid"></div>
+</div>
 
-        <iframe id="iframe_footer" src="Templates/footer.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-    </body>
+<div id="footer"></div>
+<script>
+
+    $(window).ready(function () {
+        initialize();
+        $('#navbarTab').load('Templates/navbar.html');
+        $('#educationTab').load('Templates/education.html');
+        $('#technicalSkillsTab').load('Templates/technicalSkills.html');
+        $('#softSkillsTab').load('Templates/softSkills.html');
+        $('#footer').load('Templates/footer.html');
+    });
+</script>
+</body>
 </html>
