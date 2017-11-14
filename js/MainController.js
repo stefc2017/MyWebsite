@@ -4,7 +4,6 @@ var environmentProperties;
 /******************************************* Initialize *******************************************/
 function initialize(){
     environmentProperties = new EnvironmentProperties();
-    setClientWindowHeight("#canvas-radial");
     setAppEnvironment();
     setUrl();
 }
