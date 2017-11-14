@@ -85,3 +85,7 @@ body{
 	flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
 }
+
+#iframe_footer{
+	bottom: 0;
+}

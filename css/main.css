@@ -8,182 +8,6 @@ label {
     color: black;
 }
 
-#canvas-radial {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-/* Css for jquery smart menus*/
-
-.main-nav {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-@media (min-width: 768px) {
-    .main-nav {
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px;
-        border-radius: 50px;
-    }
-}
-
-.main-nav:after {
-    clear: both;
-    content: "\00a0";
-    display: block;
-    height: 0;
-    font: 0px/0 serif;
-    overflow: hidden;
-}
-
-.nav-brand {
-    float: left;
-    margin: 0;
-}
-
-.nav-brand a {
-    display: block;
-    padding: 12px 12px 12px 20px;
-    color: #555;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 17px;
-    text-decoration: none;
-}
-
-#main-menu {
-    clear: both;
-}
-
-@media (min-width: 768px) {
-    #main-menu {
-        float: left;
-        clear: none;
-    }
-}
-
-
-/* Mobile menu toggle button */
-
-.main-menu-btn {
-    float: right;
-    margin: 6px 10px;
-    position: relative;
-    display: inline-block;
-    width: 29px;
-    height: 29px;
-    text-indent: 29px;
-    white-space: nowrap;
-    overflow: hidden;
-    cursor: pointer;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-
-/* hamburger icon */
-
-.main-menu-btn-icon,
-.main-menu-btn-icon:before,
-.main-menu-btn-icon:after {
-    position: absolute;
-    top: 50%;
-    left: 2px;
-    height: 2px;
-    width: 24px;
-    background: #555;
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-}
-
-.main-menu-btn-icon:before {
-    content: '';
-    top: -7px;
-    left: 0;
-}
-
-.main-menu-btn-icon:after {
-    content: '';
-    top: 7px;
-    left: 0;
-}
-
-/* x icon */
-#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon {
-    height: 0;
-    background: transparent;
-}
-
-#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before {
-    top: 0;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after {
-    top: 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-
-/* hide menu state checkbox (keep it visible to screen readers) */
-
-#main-menu-state {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-}
-
-
-/* hide the menu in mobile view */
-
-#main-menu-state:not(:checked) ~ #main-menu {
-    display: none;
-}
-
-#main-menu-state:checked ~ #main-menu {
-    display: block;
-}
-
-@media (min-width: 768px) {
-    /* hide the button in desktop view */
-    .main-menu-btn {
-        position: absolute;
-        top: -99999px;
-    }
-    /* always show the menu in desktop view */
-    #main-menu-state:not(:checked) ~ #main-menu {
-        display: block;
-    }
-}
-
-/* jquery smart menus css end */
-
-#NotIframe{
-    margin-top: -260px;
-}
-
 #softSkillsTab, #highSchoolTab, #postSecondaryTab, #technicalSkillsTab{
     cursor: pointer;
 }
@@ -201,13 +25,6 @@ body{
     margin-bottom: 90px;
 }
 
-#home_jumbotron_container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 #welcome{
     text-align: center;
     font-weight: bold;
@@ -215,4 +32,220 @@ body{
 
 #welcomeParagraph{
     text-align: center;
+}
+
+/* Timeline settings*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    background: #456990;
+    color: #fff;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+    background: #F45B69;
+    padding: 10px 0;
+    margin-top: -50px;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+}
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+    background: #456990;
+    padding: 50px 0;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background: #fff;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 30px;
+    background: #F45B69;
+    color: #ffffff;
+}
+
+.timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+
+}
+
+.timeline ul li:nth-child(odd) div {
+    left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #F45B69;
+}
+
+time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+    transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+    background: #F45B69;
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+    .timeline ul li div {
+        width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: -289px;
+        /*250+45-6*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(even) div {
+        left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #F45B69 transparent transparent;
+    }
+}
+
+/* end Timeline css settings*/
+
+#homeTab{
+    margin-top: 50px;
+}
+
+section{
+    margin-top:-10px;
+}
+
+.container h1{
+    height:100px;
+}
+
+#technicalSkillsHeader{
+    margin-top: -10px;
+}
+#softSkillsHeader{
+    margin-top: -20px;
+}
+
+#technicalSkillsBody{
+    margin-top: -30px;
+}
+
+#softSkillsBody{
+    margin-top: -30px;
+}
+
+#navbar_body{
+    position: relative; /* required */
+    padding-top: 60px;	/* prevent content to go underneath the fixed navbar */
 }

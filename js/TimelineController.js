@@ -2,10 +2,8 @@
 
     'use strict';
 
-    window.addEventListener('load', function () {
         // define variables
-        var items = document.querySelectorAll(".timeline li");
-
+        var items;
         // check if an element is in viewport
         // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
         function isElementInViewport(el) {
@@ -19,6 +17,7 @@
         }
 
         function callbackFunc() {
+            items = document.querySelectorAll(".timeline li");
             for (var i = 0; i < items.length; i++) {
                 if (isElementInViewport(items[i])) {
                     items[i].classList.add("in-view");
@@ -30,5 +29,5 @@
         window.addEventListener("load", callbackFunc);
         window.addEventListener("resize", callbackFunc);
         window.addEventListener("scroll", callbackFunc);
-    })
+
 })();

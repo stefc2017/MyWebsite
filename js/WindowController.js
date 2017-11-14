@@ -4,26 +4,6 @@ function setClientWindowHeight(backgroundHeight){
     initialHeight = ($(backgroundHeight).height());
 }
 
-function animateBackground(){
-    var granimInstance = new Granim({
-        element: '#canvas-radial',
-        name: 'radial-gradient',
-        direction: 'radial',
-        opacity: [1, 1],
-        isPausedWhenNotInView: true,
-        states : {
-            "default-state": {
-                gradients: [
-                    ['#ffb347', '#ffcc33'],
-                    ['#83a4d4', '#b6fbff'],
-                    ['#9D50BB', '#6E48AA']
-                ],
-                transitionSpeed: 2500
-            }
-        }
-    });
-}
-
 function updateBackgroundHeight(backgroundElement){
     setTimeout(function(){
         if(document.body.clientHeight < initialHeight){
@@ -45,11 +25,15 @@ function updateBackgroundHeight(backgroundElement){
         obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
     }
 
-    function resizeWidth(obj) {
-        obj.style.width = window.innerWidth + 'px';
-
-        if(obj.id === "iframe_navbar"){
+    function resizeWidth(obj){
+        if(obj.id === "iframe_footer"){
+            obj.style.width = window.innerWidth + 'px';
+        }
+        else if(obj.id === "iframe_navbar"){
             resizeNavbarWidth(obj);
+        }
+        else {
+            obj.style.width = $("div .jumbotron").innerWidth() + 'px';
         }
     }
 
