@@ -5,6 +5,7 @@ var environmentProperties;
 function initialize(){
     environmentProperties = new EnvironmentProperties();
     setAppEnvironment();
+    initializeEvents();
     setUrl();
 }
 
@@ -79,4 +80,17 @@ function getBrowser() {
     }
 
     return browser;
+}
+
+function initializeEvents(){
+    initializeScrollspy();
+}
+
+function initializeScrollspy(){
+    $(document).ready(function(){
+        $("body").scrollspy({
+            target: "#myNavbar",
+            offset: 50
+        })
+    });
 }

@@ -232,6 +232,7 @@ section{
 
 #technicalSkillsHeader{
     margin-top: -10px;
+    background-color: #9D832E;
 }
 #softSkillsHeader{
     margin-top: -20px;
@@ -252,4 +253,12 @@ section{
 
 #main_body{
     background-color: #f0f8ff;
+}
+
+#stefanWebsite_a, #home_a, #education_a, #technical_a, #coopExp_a, #projects_a, #work_a{
+    color: #283A90;
+}
+
+#homeHeader{
+    background-color: #14A730;
 }
