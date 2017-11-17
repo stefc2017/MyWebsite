@@ -55,7 +55,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-    background: #F45B69;
+    background-color: #A72A3F;
     padding: 10px 0;
     margin-top: -50px;
 
@@ -81,7 +81,7 @@ h1{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-    background: #456990;
+    background: #283A90;
     padding: 50px 0;
 }
 
@@ -248,4 +248,8 @@ section{
 #navbar_body{
     position: relative; /* required */
     padding-top: 60px;	/* prevent content to go underneath the fixed navbar */
+}
+
+#main_body{
+    background-color: #f0f8ff;
 }

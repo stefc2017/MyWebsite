@@ -7,107 +7,100 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
         <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
 
         <!-- My custom javascript and css includes -->
-        <script src="../js/MainController.js"></script>
+        <script src="../js/MainController.js"/>
     </head>
 
     <body>
         <div id="technicalSkillsPage">
-            <div id="technicalSkillsHeader" class="jumbotron">
+
+            <div id="technicalSkillsHeader" class="jumbotron" style="background-color: #9D832E">
                 <h1>Stéfan's Technical Skills</h1>
             </div>
 
-            <div id="technicalSkillsBody" class="panel-group" id="accordion">
+            <div id="technicalSkillsBody">
 
-                <div class="panel panel-default">
-                    <!-- Programming languages -->
-                    <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#programmingLanguages">
-                                Programming Languages</a>
-                        </h4>
-                    </div>
-
-                    <div id="programmingLanguages" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <!-- Left column -->
-                                <div class="col-md-6">
-                                    <span class="progress-label">Java</span>
-                                    <div class="progress">
-                                        <div id="java" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Android</span>
-                                    <div class="progress">
-                                        <div id="Android" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">C++</span>
-                                    <div class="progress">
-                                        <div id="C++" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Groovy</span>
-                                    <div class="progress">
-                                        <div id="groovy" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Python</span>
-                                    <div class="progress">
-                                        <div id="python" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
-                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
-                                        </div>
+            <!-- Programming languages -->
+            <h3>Programming Languages</h3>
+                <div id="programmingLanguages">
+                    <div>
+                        <div class="row">
+                            <!-- Left column -->
+                            <div class="col-md-6">
+                                <span class="progress-label">Java</span>
+                                <div class="progress">
+                                    <div id="java" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
                                     </div>
                                 </div>
 
-                                <!-- Right column -->
-                                <div class="col-md-6 text-right">
-                                    <span class="progress-label">JavaScript</span>
-                                    <div class="progress">
-                                        <div id="javaScript" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                        </div>
+                                <span class="progress-label">Android</span>
+                                <div class="progress">
+                                    <div id="Android" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
                                     </div>
+                                </div>
 
-                                    <span class="progress-label">C</span>
-                                    <div class="progress">
-                                        <div id="C" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                                        </div>
+                                <span class="progress-label">C++</span>
+                                <div class="progress">
+                                    <div id="C++" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
                                     </div>
+                                </div>
 
-                                    <span class="progress-label">Grails</span>
-                                    <div class="progress">
-                                        <div id="grails" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                                        </div>
+                                <span class="progress-label">Groovy</span>
+                                <div class="progress">
+                                    <div id="groovy" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
                                     </div>
+                                </div>
 
-                                    <span class="progress-label">Ruby</span>
-                                    <div class="progress">
-                                        <div id="ruby" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
-                                             aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%">
-                                        </div>
+                                <span class="progress-label">Python</span>
+                                <div class="progress">
+                                    <div id="python" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
+                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
                                     </div>
+                                </div>
+                            </div>
 
-                                    <span class="progress-label">C#</span>
-                                    <div class="progress">
-                                        <div id="c#" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
-                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
-                                        </div>
+                            <!-- Right column -->
+                            <div class="col-md-6 text-right">
+                                <span class="progress-label">JavaScript</span>
+                                <div class="progress">
+                                    <div id="javaScript" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">C</span>
+                                <div class="progress">
+                                    <div id="C" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Grails</span>
+                                <div class="progress">
+                                    <div id="grails" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Ruby</span>
+                                <div class="progress">
+                                    <div id="ruby" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
+                                         aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">C#</span>
+                                <div class="progress">
+                                    <div id="c#" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
+                                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
                                     </div>
                                 </div>
                             </div>
@@ -115,141 +108,128 @@
                     </div>
                 </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#techAndFrameworks">
-                                Technologies and Frameworks</a>
-                        </h4>
-                    </div>
-                    <div id="techAndFrameworks" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                <!-- Left column -->
-                                <div class="col-md-6">
-                                    <span class="progress-label">Git</span>
-                                    <div class="progress">
-                                        <div id="Git" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                        </div>
-                                    </div>
+                <h3>Technologies and Frameworks</h3>
 
-                                    <span class="progress-label">HTML</span>
-                                    <div class="progress">
-                                        <div id="html" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">SQL</span>
-                                    <div class="progress">
-                                        <div id="sql" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">jQuery</span>
-                                    <div class="progress">
-                                        <div id="jQuery" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">RSVP.js</span>
-                                    <div class="progress">
-                                        <div id="rsvp.js" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Spring Security</span>
-                                    <div class="progress">
-                                        <div id="spring" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Jasper</span>
-                                    <div class="progress">
-                                        <div id="jasper" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Hogan.js</span>
-                                    <div class="progress">
-                                        <div id="hogan" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
-                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
-                                        </div>
+                <div id="techAndFrameworks">
+                    <div>
+                        <div class="row">
+                            <!-- Left column -->
+                            <div class="col-md-6">
+                                <span class="progress-label">Git</span>
+                                <div class="progress">
+                                    <div id="Git" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
                                     </div>
                                 </div>
 
-                                <!-- Right column -->
-                                <div class="col-md-6 text-right">
-                                    <span class="progress-label">JIRA</span>
-                                    <div class="progress">
-                                        <div id="jira" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">CSS</span>
-                                    <div class="progress">
-                                        <div id="css" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Bootstrap</span>
-                                    <div class="progress">
-                                        <div id="bootstrap" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
-                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">SQLite</span>
-                                    <div class="progress">
-                                        <div id="sqlite" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Mustache</span>
-                                    <div class="progress">
-                                        <div id="Mustache" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Oracle</span>
-                                    <div class="progress">
-                                        <div id="oracle" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                                        </div>
-                                    </div>
-
-                                    <span class="progress-label">Moments</span>
-                                    <div class="progress">
-                                        <div id="moments" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
-                                             aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%">
-                                        </div>
+                                <span class="progress-label">HTML</span>
+                                <div class="progress">
+                                    <div id="html" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
                                     </div>
                                 </div>
+
+                                <span class="progress-label">SQL</span>
+                                <div class="progress">
+                                    <div id="sql" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">jQuery</span>
+                                <div class="progress">
+                                    <div id="jQuery" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">RSVP.js</span>
+                                <div class="progress">
+                                    <div id="rsvp.js" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Spring Security</span>
+                                <div class="progress">
+                                    <div id="spring" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Jasper</span>
+                                <div class="progress">
+                                    <div id="jasper" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Hogan.js</span>
+                                <div class="progress">
+                                    <div id="hogan" class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
+                                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right column -->
+                            <div class="col-md-6 text-right">
+                                <span class="progress-label">JIRA</span>
+                                <div class="progress">
+                                    <div id="jira" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">CSS</span>
+                                <div class="progress">
+                                    <div id="css" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Bootstrap</span>
+                                <div class="progress">
+                                    <div id="bootstrap" class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar"
+                                         aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">SQLite</span>
+                                <div class="progress">
+                                    <div id="sqlite" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Mustache</span>
+                                <div class="progress">
+                                    <div id="Mustache" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Oracle</span>
+                                <div class="progress">
+                                    <div id="oracle" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:45%">
+                                    </div>
+                                </div>
+
+                                <span class="progress-label">Moments</span>
+                                <div class="progress">
+                                    <div id="moments" class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar"
+                                         aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width:35%">
+                                    </div>
+                                </div>
+                            </div>
 
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#Operating_Systems">
-                                Operating Systems</a>
-                        </h4>
-                    </div>
-                    <div id="Operating_Systems" class="panel-collapse collapse">
-                        <div class="panel-body">
+                    <h3>Operating Systems</h3>
+                        <div id="Operating_Systems">
                             <div class="row">
                                 <!-- Left column -->
                                 <div class="col-md-6">
@@ -307,18 +287,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading" onclick="updateBackgroundHeight('#canvas-radial')">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#Software">
-                                Software</a>
-                        </h4>
-                    </div>
-                    <div id="Software" class="panel-collapse collapse">
-                        <div class="panel-body">
+                        <h3>Software</h3>
+                        <div id="Software">
                             <div class="row">
                                 <!-- Left column -->
                                 <div class="col-md-6">
@@ -385,7 +356,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+
+            <script>
+                $("#technicalSkillsBody").accordion({
+                    heightStyle: "content"
+                });
+            </script>
     </body>
 </html>

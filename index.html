@@ -10,7 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"/>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- My custom javascript and css includes -->
     <script src="js/MainController.js"></script>
     <script src="js/TimelineController.js"></script>
@@ -18,14 +19,14 @@
     <link rel="stylesheet" href="css/footer.css" />
 </head>
 
-<body>
+<body id="main_body">
 
 <div id="navbarTab"></div>
 
 <div id="page_container" class="container">
 
     <div class="container-fluid">
-        <div id="homeHeader" class="jumbotron">
+        <div id="homeHeader" class="jumbotron" style="background-color: #14A730">
             <h1 id="welcome">Welcome!</h1>
             <p id="welcomeParagraph">This website was coded by myself from scratch and is an electronic version of my paper resume. Thank you for taking
                 the time to visit my website. Enjoy!</p>
@@ -48,6 +49,7 @@
         $('#softSkillsTab').load('Templates/softSkills.html');
         $('#footer').load('Templates/footer.html');
     });
+
 </script>
 </body>
 </html>
