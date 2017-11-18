@@ -16,14 +16,10 @@
     </head>
 
     <body>
-
-        <section id="educationHeader" class="intro">
-            <div>
-                <h1>My education</h1>
-            </div>
-        </section>
-
+    <br>
         <section class="timeline">
+             <div id="educationHeader"> </div> <br>
+             <h2 id="educationTitle">My Education</h2>
             <ul>
                 <li>
                     <div>
@@ -57,5 +53,15 @@
                 </li>
             </ul>
         </section>
+
+    <script>
+        <!-- For when click tab, scrollspy adjust the screen. TODO: Needs to be put in MainController.js-->
+        var offset = 49;
+        $('.navbar li a').click(function(event) {
+            event.preventDefault();
+            $($(this).attr('href'))[0].scrollIntoView();
+            scrollBy(0, -offset);
+        });
+    </script>
     </body>
 </html>

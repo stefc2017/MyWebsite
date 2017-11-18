@@ -54,13 +54,6 @@ body {
 /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.intro {
-    background-color: #A72A3F;
-    padding: 10px 0;
-    margin-top: -50px;
-
-}
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -80,9 +73,14 @@ h1{
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.timeline{
+    margin-top: -70px;
+    background-color: #A7AFD4;
+}
+
 .timeline ul {
-    background: #283A90;
-    padding: 50px 0;
+    padding: 110px 0;
+    margin-top:-80px;
 }
 
 .timeline ul li {
@@ -111,7 +109,7 @@ h1{
     bottom: 0;
     width: 400px;
     padding: 30px;
-    background: #F45B69;
+    background: #EBADAE;
     color: #ffffff;
 }
 
@@ -132,7 +130,7 @@ h1{
 .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent #EBADAE transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -142,7 +140,7 @@ h1{
 .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #F45B69;
+    border-color: transparent transparent transparent #EBADAE;
 }
 
 time {
@@ -162,7 +160,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-    background: #F45B69;
+    background: #EBADAE;
 }
 
 .timeline ul li div {
@@ -212,7 +210,7 @@ time {
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
-        border-color: transparent #F45B69 transparent transparent;
+        border-color: transparent #EBADAE transparent transparent;
     }
 }
 
@@ -231,15 +229,19 @@ section{
 }
 
 #technicalSkillsHeader{
-    margin-top: -10px;
-    background-color: #9D832E;
+    margin-top: -30px;
+    background-color: #E1D089;
+    margin-bottom: 50px;
+    text-align: center;
+    vertical-align: middle;
 }
+
 #softSkillsHeader{
     margin-top: -20px;
 }
 
 #technicalSkillsBody{
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
 #softSkillsBody{
@@ -256,9 +258,28 @@ section{
 }
 
 #stefanWebsite_a, #home_a, #education_a, #technical_a, #coopExp_a, #projects_a, #work_a{
-    color: #283A90;
+    color: white;
+}
+
+hr {
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0 none;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+#educationTitle, #technicalSkillsTitle{
+    font-weight:bold;
 }
 
 #homeHeader{
-    background-color: #14A730;
+    background-color: #E1D089;
+    max-height: 300px;
+}
+
+#educationHeader{
+    margin-top:-34px;
 }
