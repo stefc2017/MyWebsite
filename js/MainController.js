@@ -94,3 +94,7 @@ function initializeScrollspy(){
         })
     });
 }
+
+function setColorOfElement(element, color){
+    $(element).css('border-color', color);
+}
