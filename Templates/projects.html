@@ -1,33 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Stefan's projects</title>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #projectsContainer, #myCarousel, .carousel-inner,.item {
+            height: 500px;
+        }
 
-        <!-- My custom javascript and css includes -->
-        <script src="../js/MainController.js"></script>
-        <link rel="stylesheet" href="../css/main.css">
-    </head>
+        img{
+            margin-left:200px;
+            max-height: 100%;
+            width:300px;
+        }
 
-    <body>
-        <!-- Create a <canvas> element -->
-        <canvas id="canvas-radial"></canvas>
-        <iframe id="iframe_navbar" src="navbar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+        h2{
+            text-align: center;
+        }
 
-        <script>
-            $(function(){
-                initialize();
-                initializeSmartMenu();
-            })
-        </script>
+        .carousel-caption{
+            position: absolute;
+            top: 5%;
+            text-align: right;
+        }
 
-        <iframe id="iframe_footer" src="footer.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-    </body>
+        h3{
+            color: #000;
+            font-family: "Rockwell Extra Bold";
+            width:50%;
+            float: right;
+            text-align: left;
+
+
+        }
+
+        div > div > div > div > p{
+            position: absolute;
+            color: #000;
+            margin-top:15%;
+            text-align: left;
+            left:345px;
+            top: 60px;
+        }
+
+        div > div > div > div > a{
+            position: relative;
+            margin-top:40%;
+            top: 305px;
+            font-size: 20px;
+            left:200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="projectsContainer" class="container">
+    <h2>Projects</h2>
+
+    <form>
+        <div class="form-group">
+            <label for="sel1">Select project:</label>
+            <select class="form-control" id="sel1">
+                <option onclick="changeContent(1)">Degree Planner</option>
+                <option onclick="changeContent(2)">2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <br>
+        </div>
+    </form>
+
+    <div id="myCarousel" class="carousel slide carousel-fit"></div>
+
+    </div>
+</div>
+
+<script>
+    $(window).ready(function () {
+        $('#myCarousel').load('degree_planner.html');
+    });
+
+    function changeContent(num) {
+        if(num == 1){
+            $('#myCarousel').load('degree_planner.html');
+        }
+        else if(num == 2){
+            $('#myCarousel').load('2.html');
+        }
+    }
+</script>
+</body>
 </html>
