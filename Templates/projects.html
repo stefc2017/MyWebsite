@@ -46,6 +46,7 @@
             text-align: left;
             left:345px;
             top: 60px;
+            margin-right:20px;
         }
 
         div > div > div > div > a{
@@ -55,6 +56,7 @@
             font-size: 20px;
             left:200px;
         }
+
     </style>
 </head>
 <body>
@@ -62,14 +64,13 @@
 <div id="projectsContainer" class="container">
     <h2>Projects</h2>
 
-    <form>
+    <form autocomplete="off">
         <div class="form-group">
             <label for="sel1">Select project:</label>
             <select class="form-control" id="sel1">
-                <option onclick="changeContent(1)">Degree Planner</option>
-                <option onclick="changeContent(2)">2</option>
-                <option>3</option>
-                <option>4</option>
+                <option onclick="changeContent('degree_planner')">Degree Planner</option>
+                <option onclick="changeContent('loginPrototype')">LoginPrototype</option>
+                <option onclick="changeContent('programmerDevTools')">ProgrammerDevTools</option>
             </select>
             <br>
         </div>
@@ -85,12 +86,15 @@
         $('#myCarousel').load('degree_planner.html');
     });
 
-    function changeContent(num) {
-        if(num == 1){
+    function changeContent(projectName) {
+        if(projectName === "degree_planner"){
             $('#myCarousel').load('degree_planner.html');
         }
-        else if(num == 2){
-            $('#myCarousel').load('2.html');
+        else if(projectName === "loginPrototype"){
+            $('#myCarousel').load('loginPrototype.html');
+        }
+        else if(projectName === "programmerDevTools"){
+            $('#myCarousel').load('programmerDevTools.html');
         }
     }
 </script>
