@@ -23,7 +23,7 @@ function EnvironmentProperties(){
 
     this.setUrl = function(){
         if(this.environment === "dev"){
-            this.currentUrl = "https://stefc2017.github.io/MyWebsite/";
+            this.currentUrl = "https://stefc2017.github.io/StefansWebsite/";
         }
         else if(this.environment === "localhost"){
             this.currentUrl = "file:///C:/Users/Stefan/Desktop/Programming/web/MyWebsite/";
@@ -34,7 +34,7 @@ function EnvironmentProperties(){
         var url;
 
         if(this.environment === "dev"){
-            url = "https://stefc2017.github.io/MyWebsite/";
+            url = "https://stefc2017.github.io/StefansWebsite/";
         }
         else if(this.environment === "localhost"){
             url = "file:///C:/Users/Stefan/Desktop/Programming/web/MyWebsite/";
