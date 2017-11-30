@@ -1,0 +1,75 @@
+.carousel-inner{
+    margin-top:-20px;
+}
+
+.carousel-inner > div > img{
+    margin-left:200px;
+    min-height:500px;
+    max-height:500px;
+    width: 300px;
+
+}
+
+#projectsContainer > h2{
+    text-align: center;
+    font-weight:bold;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 5%;
+    text-align: right;
+}
+
+div > div > .carousel-caption > div > h3{
+    color: #000;
+    font-family: "Rockwell Extra Bold";
+    width:50%;
+    float: right;
+    text-align: left;
+}
+
+div > div > .carousel-caption > div > p{
+    position: absolute;
+    color: #000;
+    margin-top:15%;
+    text-align: left;
+    left:345px;
+    top: 60px;
+    margin-right:20px;
+}
+
+
+#downloadLinkOnly{
+    position: relative;
+    margin-top:40%;
+    top: 305px;
+    font-size: 20px;
+    left:200px;
+    margin-right: 40px;
+    margin-left:70px;
+}
+
+#downloadLink{
+    position: relative;
+    margin-top:40%;
+    top: 305px;
+    font-size: 20px;
+    left:200px;
+    margin-right: 40px;
+    margin-left:135px;
+}
+
+#sourceLink{
+    position: relative;
+    margin-top:40%;
+    top: 305px;
+    font-size: 20px;
+    left:200px;
+}
+
+#projectsContainer{
+    background-color: #A7AFD4;
+    margin-top:-20px;
+}
+

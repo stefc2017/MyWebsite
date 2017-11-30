@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Stefan's projects</title>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"href="css/projects.css"/>
+</head>
+<body>
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div id="projectsContainer">
+    <br/>
+    <h2 id="projectTitle" >Projects</h2>
 
-        <!-- My custom javascript and css includes -->
-        <script src="../js/MainController.js"></script>
-        <link rel="stylesheet" href="../css/main.css">
-    </head>
+    <form autocomplete="off">
+        <div class="form-group">
+            <label for="sel1">Select project:</label>
+            <select class="form-control" id="sel1">
+                <option onclick="changeContent('degree_planner')">Degree Planner</option>
+                <option onclick="changeContent('loginPrototype');">LoginPrototype</option>
+                <option onclick="changeContent('programmerDevTools')">ProgrammerDevTools</option>
+            </select>
+            <br>
+        </div>
+    </form>
 
-    <body>
-        <!-- Create a <canvas> element -->
-        <canvas id="canvas-radial"></canvas>
-        <iframe id="iframe_navbar" src="navbar.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+    <div id="myCarousel" class="carousel slide carousel-fit"></div>
+    </div>
+</div>
 
-        <script>
-            $(function(){
-                initialize();
-                initializeSmartMenu();
-            })
-        </script>
+<script>
+    $(window).ready(function () {
+        $('#myCarousel').load('Templates/degree_planner.html');
+    });
 
-        <iframe id="iframe_footer" src="footer.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
-    </body>
+
+    function changeContent(projectName) {
+
+        if(projectName === "degree_planner"){
+            $('#myCarousel').load('Templates/degree_planner.html');
+        }
+        else if(projectName === "loginPrototype"){
+            $('#myCarousel').load('Templates/loginPrototype.html');
+        }
+        else if(projectName === "programmerDevTools"){
+            $('#myCarousel').load('Templates/programmerDevTools.html');
+        }
+    }
+</script>
+</body>
 </html>
