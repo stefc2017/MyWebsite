@@ -40,7 +40,7 @@ div > div > .carousel-caption > div > p{
 }
 
 
-#downloadLinkOnly{
+#sourceLink{
     position: relative;
     margin-top:40%;
     top: 305px;
@@ -48,24 +48,6 @@ div > div > .carousel-caption > div > p{
     left:200px;
     margin-right: 40px;
     margin-left:70px;
-}
-
-#downloadLink{
-    position: relative;
-    margin-top:40%;
-    top: 305px;
-    font-size: 20px;
-    left:200px;
-    margin-right: 40px;
-    margin-left:135px;
-}
-
-#sourceLink{
-    position: relative;
-    margin-top:40%;
-    top: 305px;
-    font-size: 20px;
-    left:200px;
 }
 
 #projectsContainer{
