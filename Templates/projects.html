@@ -7,69 +7,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <style>
-        #projectsContainer, #myCarousel, .carousel-inner,.item {
-            height: 500px;
-        }
-
-        img{
-            margin-left:200px;
-            max-height: 100%;
-            width:300px;
-        }
-
-        h2{
-            text-align: center;
-        }
-
-        .carousel-caption{
-            position: absolute;
-            top: 5%;
-            text-align: right;
-        }
-
-        h3{
-            color: #000;
-            font-family: "Rockwell Extra Bold";
-            width:50%;
-            float: right;
-            text-align: left;
-
-
-        }
-
-        div > div > div > div > p{
-            position: absolute;
-            color: #000;
-            margin-top:15%;
-            text-align: left;
-            left:345px;
-            top: 60px;
-            margin-right:20px;
-        }
-
-        div > div > div > div > a{
-            position: relative;
-            margin-top:40%;
-            top: 305px;
-            font-size: 20px;
-            left:200px;
-        }
-
-    </style>
+    <link rel="stylesheet"href="css/projects.css"/>
 </head>
 <body>
 
-<div id="projectsContainer" class="container">
-    <h2>Projects</h2>
+<div id="projectsContainer">
+    <br/>
+    <h2 id="projectTitle" >Projects</h2>
 
     <form autocomplete="off">
         <div class="form-group">
             <label for="sel1">Select project:</label>
             <select class="form-control" id="sel1">
                 <option onclick="changeContent('degree_planner')">Degree Planner</option>
-                <option onclick="changeContent('loginPrototype')">LoginPrototype</option>
+                <option onclick="changeContent('loginPrototype');">LoginPrototype</option>
                 <option onclick="changeContent('programmerDevTools')">ProgrammerDevTools</option>
             </select>
             <br>
@@ -77,24 +28,25 @@
     </form>
 
     <div id="myCarousel" class="carousel slide carousel-fit"></div>
-
     </div>
 </div>
 
 <script>
     $(window).ready(function () {
-        $('#myCarousel').load('degree_planner.html');
+        $('#myCarousel').load('Templates/degree_planner.html');
     });
 
+
     function changeContent(projectName) {
+
         if(projectName === "degree_planner"){
-            $('#myCarousel').load('degree_planner.html');
+            $('#myCarousel').load('Templates/degree_planner.html');
         }
         else if(projectName === "loginPrototype"){
-            $('#myCarousel').load('loginPrototype.html');
+            $('#myCarousel').load('Templates/loginPrototype.html');
         }
         else if(projectName === "programmerDevTools"){
-            $('#myCarousel').load('programmerDevTools.html');
+            $('#myCarousel').load('Templates/programmerDevTools.html');
         }
     }
 </script>
