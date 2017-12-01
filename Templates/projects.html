@@ -38,15 +38,21 @@
 
 
     function changeContent(projectName) {
-
+        console.log("changeContent method called with parameter: " + projectName);
         if(projectName === "degree_planner"){
+            console.log("In degree_planner if statement");
             $('#myCarousel').load('Templates/degree_planner.html');
+            console.log("In degree_planner if statement after ajax load");
         }
         else if(projectName === "loginPrototype"){
+            console.log("In loginPrototype else if statement");
             $('#myCarousel').load('Templates/loginPrototype.html');
+            console.log("In loginPrototype else if statement after ajax load");
         }
         else if(projectName === "programmerDevTools"){
+            console.log("In programmerDevTools else if statement");
             $('#myCarousel').load('Templates/programmerDevTools.html');
+            console.log("In programmerDevTools else if statement after ajax load");
         }
     }
 </script>
