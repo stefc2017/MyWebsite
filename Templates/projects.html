@@ -17,18 +17,17 @@
 
     <form autocomplete="off">
         <div class="form-group">
-            <label for="sel1">Select project:</label>
-            <select class="form-control" id="sel1" onclick="changeContent('degree_planner')">
-                <option onclick="changeContent('degree_planner')">Degree Planner</option>
-                <option onclick="changeContent('loginPrototype')">LoginPrototype</option>
-                <option onclick="changeContent('programmerDevTools')">ProgrammerDevTools</option>
+            <label for="projects_select">Select project:</label>
+            <select class="form-control" id="projects_select" onchange="changeContent()">
+                <option selected="selected">Degree Planner</option>
+                <option>LoginPrototype</option>
+                <option>ProgrammerDevTools</option>
             </select>
             <br>
         </div>
     </form>
 
     <div id="myCarousel" class="carousel slide carousel-fit"></div>
-    </div>
 </div>
 
 <script>
@@ -38,21 +37,23 @@
 
 
     function changeContent(projectName) {
-        console.log("changeContent method called with parameter: " + projectName);
-        if(projectName === "degree_planner"){
-            console.log("In degree_planner if statement");
+        var selected_option = $('#projects_select option:selected').text();
+        console.log("changeContent method - " + selected_option);
+
+        if(selected_option === "Degree Planner"){
+            console.log("In Degree Planner if statement");
             $('#myCarousel').load('Templates/degree_planner.html');
-            console.log("In degree_planner if statement after ajax load");
+            console.log("In Degree Planner if statement after ajax load");
         }
-        else if(projectName === "loginPrototype"){
-            console.log("In loginPrototype else if statement");
+        else if(selected_option === "LoginPrototype"){
+            console.log("In LoginPrototype else if statement");
             $('#myCarousel').load('Templates/loginPrototype.html');
-            console.log("In loginPrototype else if statement after ajax load");
+            console.log("In LoginPrototype else if statement after ajax load");
         }
-        else if(projectName === "programmerDevTools"){
-            console.log("In programmerDevTools else if statement");
+        else if(selected_option === "ProgrammerDevTools"){
+            console.log("In ProgrammerDevTools else if statement");
             $('#myCarousel').load('Templates/programmerDevTools.html');
-            console.log("In programmerDevTools else if statement after ajax load");
+            console.log("In ProgrammerDevTools else if statement after ajax load");
         }
     }
 </script>
