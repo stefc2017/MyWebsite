@@ -25,11 +25,6 @@ body{
     margin-bottom: 90px;
 }
 
-#welcome{
-    text-align: center;
-    font-weight: bold;
-}
-
 #welcomeParagraph{
     text-align: center;
 }
@@ -271,7 +266,7 @@ hr {
     margin-bottom:5px;
 }
 
-#educationTitle, #technicalSkillsTitle{
+#technicalSkillsTitle{
     font-weight:bold;
 }
 
