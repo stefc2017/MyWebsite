@@ -83,10 +83,14 @@ function getBrowser() {
 }
 
 function initializeEvents(){
-    initializeScrollspy();
+    initializeScrollspyScroll();
 }
 
-function initializeScrollspy(){
+/*
+ * Deals with adjusting when the active navbar button will change. The greater the offset, the sooner the next active
+ * button will change.
+ */
+function initializeScrollspyScroll(){
     $(document).ready(function(){
         $("body").scrollspy({
             target: "#myNavbar",
@@ -95,6 +99,19 @@ function initializeScrollspy(){
     });
 }
 
-function setColorOfElement(element, color){
-    $(element).css('border-color', color);
+/*
+ * Deals with adjusting the scroll into view when a tab is clicked. Change the offset value to adjust the view
+ * after the scroll.
+ */
+function initializeScrollspyClick(){
+    var offset = 30;
+    $(document).ready(function() {
+        setTimeout(function () {
+            $('.navbar li a').on('click', function (event) {
+                event.preventDefault();
+                $($(this).attr('href'))[0].scrollIntoView();
+                scrollBy(0, -offset);
+            });
+        });
+    }, 100);
 }

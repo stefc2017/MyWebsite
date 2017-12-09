@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:bi');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Arvo');
 
 p{
     font-family: 'Montserrat', serif;
@@ -18,4 +19,15 @@ p{
 
 #welcomeParagraph{
     font-style: italic;
+}
+
+.navbar-nav{
+    font-family: 'Merienda One', Helvetica, sans-serif;
+    color: rgba(0,0,0,0.7);
+    text-shadow: 3px 3px 3px #fff;
+}
+
+.carousel-inner > .item > .carousel-caption > div > h3{
+    font-family: 'Arvo', serif;
+    font-weight: bold;
 }
