@@ -59,14 +59,5 @@
             </ul>
         </section>
 
-    <script>
-        <!-- For when click tab, scrollspy adjust the screen. TODO: Needs to be put in MainController.js-->
-        var offset = 49;
-        $('.navbar li a').click(function(event) {
-            event.preventDefault();
-            $($(this).attr('href'))[0].scrollIntoView();
-            scrollBy(0, -offset);
-        });
-    </script>
     </body>
 </html>
