@@ -22,6 +22,7 @@
                 <option selected="selected">Degree Planner</option>
                 <option>LoginPrototype</option>
                 <option>ProgrammerDevTools</option>
+                <option>TrafficLightSimulation</option>
             </select>
             <br>
         </div>
@@ -54,6 +55,11 @@
             console.log("In ProgrammerDevTools else if statement");
             $('#myCarousel').load('Templates/programmerDevTools.html');
             console.log("In ProgrammerDevTools else if statement after ajax load");
+        }
+        else if(selected_option === "TrafficLightSimulation"){
+            console.log("In TrafficLightSimulation else if statement");
+            $('#myCarousel').load('Templates/trafficLightSimulation.html');
+            console.log("In TrafficLightSimulation else if statement after ajax load");
         }
     }
 </script>
