@@ -50,11 +50,11 @@
 	color: #040204;;
 }
 
-@media screen and (max-width: 767px){
-	#myFooter {
-		text-align: center;
-	}
-}
+/*@media screen and (max-width: 767px){*/
+	/*#myFooter {*/
+		/*text-align: center;*/
+	/*}*/
+/*}*/
 
 #copyright {
 	text-align: center;
